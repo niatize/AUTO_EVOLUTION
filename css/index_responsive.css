@@ -1,0 +1,36 @@
+@media (max-width: 850px) {
+    .child {
+        width: 100%;
+    }
+
+    .img {
+        height: 40vh;
+    }
+
+    .search_box input {
+        width: 100%;
+    }
+
+    .features_grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .img {
+        height: 30vh;
+    }
+
+    .child {
+        padding: 20px;
+    }
+
+    .stats_section {
+        flex-direction: column;
+        text-align: center;
+    }
+}

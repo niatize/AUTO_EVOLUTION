@@ -1,0 +1,145 @@
+@media (max-width: 1000px) {
+    /* Typographie et Boutons */
+    a, .sun_moon {
+        font-weight: 700;
+    }
+
+    #Thème, #Thème_2 {
+        padding: 10px;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #svg, #svg_2 {
+        display: none;
+    }
+
+    /* Menu Burger Mobile */
+    #menue_burger {
+        height: 35px;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1001;
+    }
+
+    .burger {
+        background-color: #000000;
+        width: 35px;
+        height: 4px;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .color .burger {
+        background-color: #ffffff;
+    }
+
+    /* Animations du Burger */
+    .first_animation {
+        display: none;
+    }
+
+    .second_animation {
+        position: relative;
+        top: 8px;
+        transform: rotate(45deg);
+        background-color: #ff3333 !important;
+    }
+
+    .tird_animation {
+        position: relative;
+        top: -8px;
+        transform: rotate(-45deg);
+        background-color: #ff3333 !important;
+    }
+
+    /* Tiroir de Navigation Mobile */
+    .header_box_2 {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        height: calc(100vh - 60px);
+        width: 60vw;
+        background-color: rgba(240, 248, 255, 0.9);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 30px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+    }
+
+    .header_box_2.afficher {
+        display: flex;
+    }
+
+    ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    li {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    /* Thème Sombre Mobile */
+    .color .header_box_2 {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #00a2ff;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_box_2 {
+        width: 70vw;
+    }
+
+    .log {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header_box_2 {
+        width: 85vw;
+    }
+
+    .log {
+        font-size: 15px;
+        color: goldenrod;
+    }
+
+    .logo {
+        width: 35px;
+    }
+
+    .burger {
+        width: 30px;
+        height: 3px;
+    }
+}
+
+@media (max-width: 350px) {
+    .log {
+        font-size: 12px;
+    }
+
+    .header_box_2 {
+        width: 100vw;
+    }
+}

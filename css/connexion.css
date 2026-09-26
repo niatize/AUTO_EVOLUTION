@@ -1,0 +1,124 @@
+
+#a{
+    text-decoration: none;
+    color:  greenyellow;
+}
+#a:hover{
+    color: goldenrod;
+}
+
+fieldset{
+    color: white;
+    border: none;
+    border-radius: 20px 2px ;
+    background-color: #00000082;
+    box-shadow: 0 0 3px 3px #33d17a;
+    animation: shadow 10s linear infinite;
+    box-sizing: border-box;
+}
+td{
+    padding: 20px;
+    box-sizing: border-box;
+}
+legend{
+    width: fit-content;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #808080;
+    color: white;
+    box-shadow: 0 0 3px 3px #33d17a;
+}
+.content_1{ 
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input,button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transform: scale(1);
+    transition: .5s;
+}
+[type="submit"]:hover,#back_1:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 0 0 2px 2px ;
+}
+[type="submit"],#back_1{
+    background-color: #33d17a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 175px;
+    border-radius: 0px 50px 80px 20px ;
+}
+.sub_color{
+    animation: color 2s linear infinite;
+}
+.not_sub_color{
+    animation: none;
+}
+@keyframes color {
+    0% {
+        background-image: linear-gradient(to left, #33d17a, #e5a50a);
+    }
+    50% {
+        background-image: linear-gradient(to left, #e5a50a, #33d17a);
+    }
+    100% {
+        background-image: linear-gradient(to left, #33d17a, #e5a50a);
+    }
+    0% {
+        background-image: linear-gradient(to left, #33d17a, #e5a50a);
+    }
+    50% {
+        background-image: linear-gradient(to left, #e5a50a, #33d17a);
+    }
+    100% {
+        background-image: linear-gradient(to left, #33d17a, #e5a50a);
+    }
+
+}
+.rotation{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    left: 250px;
+    top: -50px;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+    background-color: transparent;
+    border-top: 2px solid white;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.none{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.back_none{
+    display: none;
+}
+footer{
+    padding: 30px;
+}
+#connexion_form{
+    width: 25%;
+}
+.color legend{
+    background-color: black;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil - AUTO ÉVOLUTION</title>
+    <link rel="stylesheet" href="css/header_footer.css"> 
+    <link rel="stylesheet" href="css/header_responsive copy.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_responsive.css">
+</head>
+<body>
+<header>
+    <div class="header_container">
+        <div class="header_box_1" id="header_box_1">
+            <img class="logo" src="img/logo.svg" alt="Logo Auto Évolution 1" id="logo_1">
+            <img src="img/logo_2.svg" class="logo" id="logo_2" alt="Logo Auto Évolution 2">
+            <div class="log">AUTO ÉVOLUTION</div>
+        </div>
+
+        <div id="menue_burger">
+            <div class="burger" id="burger_1"></div>
+            <div class="burger" id="burger_2"></div>
+            <div class="burger" id="burger_3"></div>
+        </div>
+
+        <div class="header_box_2" id="header_box_2">
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" id="a">ACCEUIL</a></li>
+                    <li><a href="info.html">À propos de AUTO ÉVOLUTION</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="achat.html">Contact</a></li>
+
+                    <li id="moon">
+                        <span class="sun_moon" id="Thème">Thème sombre</span>
+                        <span class="sun_moon" id="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                            viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" 
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-moon-icon lucide-moon">
+                            <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
+                            </svg>
+                        </span>    
+                    </li>
+
+                    <li id="sun">
+                        <span class="sun_moon" id="Thème_2">Thème clair</span>
+                        <span class="sun_moon" id="svg_2">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" style="color: white !important;" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-sun-icon lucide-sun">
+                            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/>
+                            <path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/>
+                            <path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/>
+                            <path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/>
+                            <path d="m19.07 4.93-1.41 1.41"/></svg>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main class="main">
+        <h1>BIEN VENUE CHEZ <span id="span">AUTO ÉVOLUTION</span></h1> 
+
+        <!-- Section Slider (Première image corrigée) -->
+        <section id="slider">
+            <div class="slider">
+                <div class="slider_container">
+                    <div class="slider_slide">
+                        <img class="img" src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1200&q=80" alt="Atelier Auto Évolution">
+                        <img class="img" src="https://ik.imagekit.io/uwzsb7j5w/wp-content/uploads/sites/2/2023/06/S0-Enquete-exclusive-Pieces-detachees-comment-bien-les-choisir-et-eviter-les-pieges-558130.jpg" alt="Pièces détachées">
+                        <img class="img" src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1200&q=80" alt="Diagnostic automobile">
+                        <img class="img" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80" alt="Mécanique générale">
+                        <img class="img" src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80" alt="Entretien freinage">
+                    </div>
+                </div>
+            </div>
+        </section><br>
+
+        <!-- NOUVELLE SECTION : Barre de recherche rapide de pièces -->
+        <section class="search_section">
+            <div class="search_box">
+                <h2>Trouvez rapidement vos pièces automobiles</h2>
+                <form id="form">
+                    <input type="text" id="search" placeholder="Rechercher une pièce (ex: frein, bougie, filtre)...">
+                    <button type="submit" class="button">Rechercher</button>
+                </form>
+            </div>
+        </section><br>
+
+        <!-- Section des cartes d'information principales -->
+        <section>
+            <div class="container">
+                <div class="child">
+                    <h3>Informations sur AUTO ÉVOLUTION</h3>
+                    Pour des informations sur AUTO ÉVOLUTION, cliquer juste sur le bouton ci dessous <br>
+                    <div class="but">
+                        <button class="button" id="ifo_button">AUTO ÉVOLUTION INFO</button>
+                    </div>
+                </div>
+                <div class="child">
+                    <h3>NOS PRODUITS</h3>
+                    Nous avons les meilleure pièces mécaniques et sur tout a très bas prix
+                    <br>
+                    <div class="but">
+                        <button class="button" id="produits">Voir les produits</button>
+                    </div>
+                </div>
+                <div class="child">
+                    <h3>Achat</h3>
+                    Vous pouvez aisement passer votre commande et recevoir votre livraison dans les bref délais
+                    <div class="but">
+                        <button class="button" id="commande">Nous contacter</button>
+                    </div>
+                </div>
+                <div class="child">
+                    <h3>Autres</h3>
+                    En dehors de la vente de pièce, nous somme également 
+                    mécaniciens dans le domaine d'automobiles. Contacter nous pour en savoir plus
+                    <div class="but">
+                        <button class="button" id="contact">Nous contacter</button>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+
+        <!-- NOUVELLE SECTION : Engagement & Garanties -->
+        <section class="features_section">
+            <h2>Pourquoi choisir AUTO ÉVOLUTION ?</h2>
+            <div class="features_grid">
+                <div class="feature_item">
+                    <div class="feature_icon">⚡</div>
+                    <h4>Livraison Rapide</h4>
+                    <p>Expédition express dans tout le Cameroun pour toutes vos commandes.</p>
+                </div>
+                <div class="feature_item">
+                    <div class="feature_icon">🛠️</div>
+                    <h4>Expertise Mécanique</h4>
+                    <p>Une équipe de techniciens qualifiés pour diagnostiquer et réparer votre véhicule.</p>
+                </div>
+                <div class="feature_item">
+                    <div class="feature_icon">💎</div>
+                    <h4>Pièces D'Origine</h4>
+                    <p>Des composants de haute qualité certifiés et garantis au meilleur prix.</p>
+                </div>
+            </div>
+        </section><br>
+
+        <!-- NOUVELLE SECTION : Chiffres Clés / Statistiques -->
+        <section class="stats_section">
+            <div class="stat_card">
+                <span class="stat_number">+1000</span>
+                <span class="stat_text">Pièces en stock</span>
+            </div>
+            <div class="stat_card">
+                <span class="stat_number">100%</span>
+                <span class="stat_text">Clients Satisfaits</span>
+            </div>
+            <div class="stat_card">
+                <span class="stat_number">24/7</span>
+                <span class="stat_text">Support & Conseil</span>
+            </div>
+        </section><br><br>
+    </main>
+
+    <footer>
+        <span style="color: #00a2ff;font-weight: bolder">AUTO ÉVOLUTION</span> — Bafoussam-Cameroun
+        © create by NI PRO DEV 
+    </footer>
+
+    <script src="JS/header.js"></script>
+    <script src="JS/index.js" defer></script>
+    <script src="JS/color_pages.js" defer></script>
+</body>
+</html>

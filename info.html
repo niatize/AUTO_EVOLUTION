@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - AUTO ÉVOLUTION</title>
+    <link rel="stylesheet" href="css/header_footer.css"> 
+    <link rel="stylesheet" href="css/header_responsive copy.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/info_responsive.css">
+</head>
+<body>
+<header>
+    <div class="header_container">
+        <div class="header_box_1" id="header_box_1">
+            <img class="logo" src="img/logo.svg" alt="Logo Auto Évolution 1" id="logo_1">
+            <img src="img/logo_2.svg" class="logo" id="logo_2" alt="Logo Auto Évolution 2">
+            <div class="log">AUTO ÉVOLUTION</div>
+        </div>
+
+        <div id="menue_burger">
+            <div class="burger" id="burger_1"></div>
+            <div class="burger" id="burger_2"></div>
+            <div class="burger" id="burger_3"></div>
+        </div>
+
+        <div class="header_box_2" id="header_box_2">
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="info.html" id="a">À propos de AUTO ÉVOLUTION</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="achat.html">Contact</a></li>
+
+                    <li id="moon">
+                        <span class="sun_moon" id="Thème">Thème sombre</span>
+                        <span class="sun_moon" id="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                            viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" 
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-moon-icon lucide-moon">
+                            <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
+                            </svg>
+                        </span>    
+                    </li>
+
+                    <li id="sun">
+                        <span class="sun_moon" id="Thème_2">Thème clair</span>
+                        <span class="sun_moon" id="svg_2">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" style="color: white !important;" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-sun-icon lucide-sun">
+                            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/>
+                            <path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/>
+                            <path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/>
+                            <path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/>
+                            <path d="m19.07 4.93-1.41 1.41"/></svg>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Section de Titre et Barre de Recherche -->
+    <section class="first_section">
+        <h1>À Propos & Localisation de <span class="highlight">AUTO ÉVOLUTION</span></h1>
+        <div class="input">
+            <form action="#" method="post" id="form">
+                <input type="search" name="search" list="recherche" id="search" placeholder="Rechercher une section (ex: localisation, siège)..." />
+                <button type="submit" id="submit">
+                    <svg class="submit_logo" xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                </button>
+                <datalist id="recherche">
+                    <option value="voir sur le maps"></option>
+                    <option value="localisation"></option>
+                    <option value="siège commercial"></option>
+                    <option value="disponibilité"></option>
+                    <option value="nos valeurs"></option>
+                    <option value="faq"></option>
+                </datalist>
+            </form>
+        </div>
+    </section>
+
+    <!-- Nos Engagements Qualité -->
+    <section class="values_section">
+        <h2>Nos Engagements Qualité</h2>
+        <div class="values_grid">
+            <div class="value_card">
+                <div class="value_icon">🛡️</div>
+                <h3>Pièces Certifiées</h3>
+                <p>Chaque pièce mécanique est rigoureusement contrôlée avant sa mise en vente pour garantir votre sécurité.</p>
+            </div>
+            <div class="value_card">
+                <div class="value_icon">⏱️</div>
+                <h3>Service Réactif</h3>
+                <p>Traitement immédiat de vos demandes d'information et suivi en temps réel de vos expéditions.</p>
+            </div>
+            <div class="value_card">
+                <div class="value_icon">🤝</div>
+                <h3>Accompagnement Sur-Mesure</h3>
+                <p>Nos experts mécaniciens vous conseillent gratuitement pour choisir la pièce exacte adaptée à votre véhicule.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grille Principale d'Informations -->
+    <section id="localisation">
+        <div class="location_contain">
+            
+            <!-- Carte 1 : Comment nous trouver -->
+            <div class="child" id="localisation">
+                <section>
+                    <h3>Comment nous trouver facilement ?</h3>
+                    <ol class="info_list">
+                        <li>
+                            <strong class="li">Visuellement (si vous êtes à Marseille) :</strong>
+                            <p>
+                                C'est le repère le plus simple : la tour mesure 147 mètres de haut. Avec sa façade en verre bleu et blanc en forme de voile ou de navire inversé, elle domine tout le front de mer du nord de Marseille.
+                            </p>
+                        </li>
+                        <li>
+                            <strong class="li">En Métro / Tramway :</strong>
+                            <p>
+                                Ligne M2 (Ligne Rouge), station Gèze ou Joliette, puis marcher le long des quais (la station la plus proche est Arenc Le Silo via le tramway).
+                            </p>
+                        </li>
+                        <li>
+                            <strong class="li">En voiture / GPS :</strong>
+                            <p>
+                                Utilisez directement cet <a href="https://www.google.com/maps/dir/Paris,+France/CMA+CGM,+TOUR+CMA+CGM+BOULEVARD+JACQUES+SAADE,+4+Bd+Euromediterran%C3%A9e+Quai+d'Arenc,+13002+Marseille,+France/@45.9629855,-1.6757327,1633823m/data=!3m3!1e3!4b1!5s0x12c9c0f17402601b:0x34925acf26d10817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0f17402601b%3A0x34925acf26d10817!2sCMA%20CGM!5e1!3m2!1sfr!2scm!4v1784394115702!5m2!1sfr!2scm" target="_blank" class="a_link">itinéraire sur Google Maps</a>. La tour se situe à la sortie de l'autoroute A55.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <div class="but_container">
+                    <a href="index.html" class="button">Retour à l'Accueil</a>
+                </div>
+            </div>
+
+            <!-- Carte 2 : Carte Interactive (Maps) -->
+            <div class="child" id="maps">
+                <section>
+                    <h3>Localisation Interactive</h3>
+                    <div class="map_wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.0979779922595!2d5.365127945709504!3d43.315050837431244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0f17402601b%3A0x34925acf26d10817!2sCMA%20CGM!5e1!3m2!1sfr!2scm!4v1784394115702!5m2!1sfr!2scm" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                    <h4>Repère visuel sur place :</h4>
+                    <p>
+                        Notre site est adossé à la Tour CMA CGM à Marseille. C’est un point névralgique à partir duquel notre direction coordonne la distribution de nos équipements.
+                    </p>
+                </section>
+                <div class="but_container">
+                    <a href="produits.html" class="button">Voir les Produits</a>
+                </div>
+            </div>
+
+            <!-- Carte 3 : Siège Commercial -->
+            <div class="child" id="siège">
+                <section>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5D82lmnT97tUPpUb5TNfhNkvbtPksM-of3lrsys8Xxw&s=10" alt="Siège AUTO ÉVOLUTION" class="img" id="img">
+                    <h3>Notre Siège Commercial</h3>
+                    <p>
+                        Dédié à la vente et au conseil technique de pièces mécaniques automobiles, notre siège commercial garantit une prise en charge rapide de vos commandes d'équipements avec une couverture logistique optimale.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Carte 4 : Disponibilité et Engagements -->
+            <div class="child" id="disponibilité">
+                <section>
+                    <h3>Disponibilité & Garanties</h3>
+                    <p>
+                        Nous sommes disponibles <strong>7j/7</strong> pour vous proposer des pièces mécaniques de haute qualité adaptées à vos besoins.<br><br>
+                        Notre équipe technique est prête à répondre à vos questions par WhatsApp ou par téléphone.
+                    </p>
+                    <div class="notice_box">
+                        <span class="spn"><strong>Engagement AUTO ÉVOLUTION :</strong> Nous garantissons des pièces d'origine certifiées. Service : <em>satisfait ou remboursé</em>.</span>
+                    </div>
+                </section>
+                <div class="but_container">
+                    <a href="achat.html" class="button">Nous Contacter</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Foire Aux Questions (FAQ) -->
+    <section class="faq_section" id="faq">
+        <h2>Questions Fréquemment Posées (FAQ)</h2>
+        <div class="faq_container">
+            <div class="faq_item">
+                <h4>1. Comment m'assurer que la pièce est compatible avec mon véhicule ?</h4>
+                <p>Vous pouvez nous transmettre le numéro de série (VIN) de votre carte grise par message. Notre équipe vérifiera la compatibilité exacte avant l'expédition.</p>
+            </div>
+            <div class="faq_item">
+                <h4>2. Quels sont les délais de livraison ?</h4>
+                <p>Toute commande passée avant 12h est expédiée le jour même. La livraison s'effectue généralement entre 24h et 48h selon votre région.</p>
+            </div>
+            <div class="faq_item">
+                <h4>3. Comment fonctionne la garantie "Satisfait ou Remboursé" ?</h4>
+                <p>Si la pièce ne convient pas ou présente un défaut, vous disposez de 14 jours pour nous la retourner dans son emballage d'origine pour un échange ou un remboursement complet.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <span style="color: #00a2ff; font-weight: bolder">AUTO ÉVOLUTION</span> — Bafoussam-Cameroun
+    © created by NI PRO DEV 
+</footer>
+
+<script src="JS/header.js"></script>
+<script src="JS/index.js" defer></script>
+</body>
+</html>

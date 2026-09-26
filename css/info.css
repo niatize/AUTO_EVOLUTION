@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+/* Header de la page */
+.first_section {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+
+.first_section h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.highlight {
+    color: #00a2ff;
+}
+
+/* Barre de recherche */
+.input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 5px 15px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ddd;
+    max-width: 500px;
+    width: 90%;
+}
+
+#search {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    background: transparent;
+}
+
+#submit {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #00a2ff;
+}
+
+/* Section Valeurs */
+.values_section {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.values_section h2 {
+    font-size: 22px;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.values_grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.value_card {
+    flex: 1;
+    min-width: 260px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.value_icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.value_card h3 {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.value_card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Grille de Localisation */
+.location_contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.child {
+    width: calc(50% - 25px);
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.child:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 162, 255, 0.15);
+}
+
+.child h3 {
+    font-size: 20px;
+    color: #0056b3;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.child h4 {
+    font-size: 16px;
+    margin: 15px 0 8px;
+    color: #222;
+}
+
+.child p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.info_list {
+    list-style: none;
+    padding: 0;
+}
+
+.info_list li {
+    margin-bottom: 15px;
+}
+
+.li {
+    color: #008855;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.a_link {
+    color: goldenrod;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.map_wrapper {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.map_wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.notice_box {
+    background-color: #eef7ff;
+    border-left: 4px solid #00a2ff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.spn {
+    font-size: 13px;
+    color: #004488;
+}
+
+/* Section FAQ */
+.faq_section {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.faq_section h2 {
+    font-size: 22px;
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq_item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.faq_item h4 {
+    color: #18da6f;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.faq_item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Boutons */
+.but_container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    color: white !important;
+    background-color: #18da6f;
+    padding: 10px 22px;
+    border-radius: 20px 4px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00a2ff;
+    box-shadow: 0 0 8px gold;
+    color: white !important;
+    transform: scale(1.03);
+}
+
+/* Thème Sombre (.color) */
+body.color {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.color .first_section h1,
+body.color .child h4,
+body.color .value_card h3,
+body.color .faq_section h2 {
+    color: #ffffff;
+}
+
+body.color #form,
+body.color .value_card,
+body.color .faq_item {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+body.color #search {
+    background-color: #2b2b2b;
+    color: #fff;
+    border-color: #444;
+}
+
+body.color .child {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.color .child h3,
+body.color .values_section h2 {
+    color: #4da6ff;
+    border-bottom-color: #333;
+}
+
+body.color .child p,
+body.color .value_card p,
+body.color .faq_item p {
+    color: #ccc;
+}
+
+body.color .notice_box {
+    background-color: #1a2633;
+    border-left-color: #4da6ff;
+}
+
+body.color .spn {
+    color: #80c1ff;
+}

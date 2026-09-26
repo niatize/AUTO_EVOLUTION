@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Titre principal */
+h1 {
+    padding: 20px;
+    background-color: rgb(3, 136, 85);
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+#span {
+    color: gold;
+    background-color: transparent;
+}
+
+/* Slider / Carrousel d'images */
+.slider {
+    z-index: 1;
+    width: 100%;     
+    overflow-x: hidden;
+}
+
+.slider_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider_slide {
+    display: flex;
+    width: 500%;
+    animation: slide 22s infinite ease-in-out;
+}
+
+.img {
+    width: 20%;
+    height: 60vh;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0%, 16% { transform: translateX(0%); }
+    20%, 36% { transform: translateX(-20%); }
+    40%, 56% { transform: translateX(-40%); }
+    60%, 76% { transform: translateX(-60%); }
+    80%, 96% { transform: translateX(-80%); }
+    100% { transform: translateX(0%); }
+}
+
+/* Barre de Recherche Rapide */
+.search_section {
+    max-width: 1150px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.search_box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.search_box h2 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.search_box form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search_box input {
+    padding: 12px 20px;
+    width: 60%;
+    min-width: 250px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search_box input:focus {
+    border-color: rgb(3, 136, 85);
+}
+
+/* Grille des Cartes Principales */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.child {
+    width: calc(50% - 30px);
+    min-width: 280px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    color: #222222;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.child:hover {
+    position: relative;
+    top: -15px;
+    box-shadow: 0 8px 20px rgba(165, 42, 42, 0.3);
+    transition: .5s;
+}
+
+h3 {
+    padding: 10px;
+    font-weight: bolder;
+    color: #0056b3;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Boutons */
+.but {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.button {
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 20px 2px 5px;
+    background-color: #18da6f;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    border-radius: 2px 20px 5px;
+    background-color: rgb(0, 174, 255);
+    transition: .5s;
+    box-shadow: 0 0 8px 1px gold;
+}
+
+/* Section Nos Engagements */
+.features_section {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.features_section h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #0056b3;
+}
+
+.features_grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature_item {
+    flex: 1;
+    min-width: 250px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature_icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.feature_item h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Section Statistiques */
+.stats_section {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgb(3, 136, 85);
+    border-radius: 15px;
+    color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat_number {
+    font-size: 32px;
+    font-weight: bold;
+    color: gold;
+}
+
+.stat_text {
+    font-size: 16px;
+}
+
+/* Thème Sombre (.color) */
+body.color {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.color .child,
+body.color .search_box,
+body.color .feature_item {
+    background-color: rgb(39, 38, 38);
+    color: #ffffff;
+}
+
+body.color h3,
+body.color .search_box h2,
+body.color .features_section h2 {
+    background-color: transparent;
+    color: #4da6ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    margin-top: 30px;
+}

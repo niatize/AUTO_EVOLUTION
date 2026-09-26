@@ -1,0 +1,187 @@
+:root {
+    --header_and_footer: #fafafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--header_and_footer);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Logos & Marque */
+#header_box_1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+    background: none;
+}
+
+#logo_2 {
+    display: none;
+}
+
+#logo_1 {
+    display: block;
+}
+
+.log {
+    font-size: 22px;
+    font-weight: 800;
+    color: #00a2ff;
+    padding: 5px 10px;
+}
+
+/* Navigation Bureau */
+.header_box_2 {
+    width: 60%;
+}
+
+#nav {
+    background-color: transparent;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: transparent;
+}
+
+li {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #111111;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+a:hover {
+    border-radius: 8px !important;
+    color: #00a2ff !important;
+}
+header{
+
+a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: goldenrod;
+    transition: all .3s ease;
+    border-radius: 20px;
+}
+a:hover:before{
+    width: 100%;
+}
+
+#a::before{
+    content: '';
+    width: 100%;
+}
+}
+
+/* Thème (Sun / Moon) Icons */
+.sun_moon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#Thème, #Thème_2 {
+    display: none;
+}
+
+#sun, #moon {
+    width: fit-content;
+    cursor: pointer;
+}
+
+/* Menu Burger Bureau (Caché) */
+#menue_burger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Pied de page */
+footer {
+    background-color: rgb(223, 221, 221);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
+    font-weight: 600;
+}
+
+/* Thème Sombre (.color) */
+.color body,
+.color main,
+.color footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.color .header_container {
+    background-color: #121212;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+.color #logo_1 {
+    display: none;
+}
+
+.color #logo_2 {
+    display: block;
+}
+
+.color a {
+    color: #ffffff;
+}
+
+.color #Thème,
+.color #Thème_2 {
+    color: white;
+}
+
+.color input {
+    color: black;
+}

@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nos Produits - AUTO ÉVOLUTION</title>
+
+    <link rel="stylesheet" href="css/header_footer.css"> 
+    <link rel="stylesheet" href="css/header_responsive copy.css">
+    <link rel="stylesheet" href="css/produit.css">
+    <link rel="stylesheet" href="css/produit_responsive.css">
+    <script src="JS/color_pages.js" defer></script>
+    <script src="JS/header.js" defer></script>
+    <script src="JS/produit.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="header_container">
+        <div class="header_box_1" id="header_box_1">
+            <img class="logo" src="img/logo.svg" alt="Logo Auto Évolution 1" id="logo_1">
+            <img src="img/logo_2.svg" class="logo" id="logo_2" alt="Logo Auto Évolution 2">
+            <div class="log">AUTO ÉVOLUTION</div>
+        </div>
+
+        <div id="menue_burger">
+            <div class="burger" id="burger_1"></div>
+            <div class="burger" id="burger_2"></div>
+            <div class="burger" id="burger_3"></div>
+        </div>
+
+        <div class="header_box_2" id="header_box_2">
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="info.html">À propos de AUTO ÉVOLUTION</a></li>
+                    <li><a href="produits.html" id="a">Produits</a></li>
+                    <li><a href="achat.html">Contact</a></li>
+
+                    <li id="moon">
+                        <span class="sun_moon" id="Thème">Thème sombre</span>
+                        <span class="sun_moon" id="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                            viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" 
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-moon-icon lucide-moon">
+                            <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
+                            </svg>
+                        </span>    
+                    </li>
+
+                    <li id="sun">
+                        <span class="sun_moon" id="Thème_2">Thème clair</span>
+                        <span class="sun_moon" id="svg_2">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" style="color: white;" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-sun-icon lucide-sun">
+                            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/>
+                            <path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/>
+                            <path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/>
+                            <path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/>
+                            <path d="m19.07 4.93-1.41 1.41"/></svg>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- ============================================================
+     CONTENU PRINCIPAL
+     ============================================================ -->
+
+<main>
+
+
+    <!-- BANNIÈRE -->
+
+    <section class="first_section">
+
+        <div class="banner_overlay">
+
+            <h1>
+                Sélectionnez vos pièces & équipements
+            </h1>
+
+            <p>
+                Cliquez sur les pièces de votre choix
+                pour les ajouter à votre commande.
+            </p>
+
+
+            <!-- RECHERCHE -->
+
+            <div class="search_container">
+
+                <input
+                    type="search"
+                    id="search_input"
+                    placeholder="Rechercher une pièce..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         CATALOGUE
+         ======================================================== -->
+
+    <div class="main_corp">
+
+        <section class="product_group">
+
+            <div class="catalogue_header">
+
+                <h2>
+                    Catalogue de nos pièces
+                </h2>
+
+                <p id="catalogue_count">
+                    150 pièces disponibles
+                </p>
+
+            </div>
+
+
+            <!-- FILTRES -->
+
+            <div
+                class="category_filters"
+                id="category_filters"
+            >
+
+                <!-- Les catégories seront générées
+                     automatiquement par JS -->
+
+            </div>
+
+
+            <!-- PRODUITS -->
+
+            <div
+                class="location_content"
+                id="products_grid"
+            >
+
+                <!--
+                    Les produits sont générés
+                    automatiquement par produit.js
+                -->
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- ============================================================
+     BARRE FLOTTANTE DE SÉLECTION
+     ============================================================ -->
+
+<div
+    id="selection_bar"
+    class="selection_bar"
+>
+
+    <div class="selection_information">
+
+        <strong>
+            <span id="selected_count">0</span>
+        </strong>
+
+        <span>
+            article(s) sélectionné(s)
+        </span>
+
+    </div>
+
+
+    <div class="selection_actions">
+
+        <button
+            type="button"
+            id="btn_clear_selection"
+        >
+            Tout désélectionner
+        </button>
+
+
+        <button
+            type="button"
+            id="btn_send_order"
+        >
+            Valider et commander ➜
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+
+<footer>
+
+    <span
+        style="
+            color: #00a2ff;
+            font-weight: bolder;
+        "
+    >
+        AUTO ÉVOLUTION
+    </span>
+
+    — Bafoussam-Cameroun
+
+    © created by NI PRO DEV
+
+</footer>
+
+
+</body>
+
+</html>
